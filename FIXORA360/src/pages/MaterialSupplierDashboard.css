@@ -1,0 +1,265 @@
+.ms-dashboard {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%);
+  color: #0f172a;
+}
+
+.ms-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem 1.5rem;
+}
+
+.ms-topbar h1 { margin: 0; font-size: 2rem; font-weight: 800; }
+.ms-topbar p { margin: 0.35rem 0 0; color: #475569; }
+
+.pill {
+  background: #0ea5e9;
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+}
+
+.ms-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 2rem 1.5rem;
+}
+
+.ms-grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  background: #ecfeff;
+  color: #0ea5e9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.muted { color: #64748b; }
+.small { font-size: 0.9rem; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.stat-value { margin: 0; font-size: 1.35rem; font-weight: 800; }
+.stat-label { margin: 0; color: #94a3b8; font-size: 0.9rem; }
+.success { color: #10b981; }
+.warn { color: #f59e0b; }
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.label { color: #94a3b8; margin: 0; }
+.value { margin: 0.2rem 0 0; font-weight: 800; font-size: 1.2rem; }
+
+.chart-placeholder {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-list { display: flex; flex-direction: column; gap: 1rem; }
+.product-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.product-actions { display: flex; gap: 0.5rem; align-items: center; }
+
+.inventory-forms { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.inventory-log { display: flex; flex-direction: column; gap: 0.75rem; }
+.log-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.85rem;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pill-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.pill {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #475569;
+}
+.pill.active { background: #0ea5e9; color: #fff; border-color: #0ea5e9; }
+
+.orders { display: flex; flex-direction: column; gap: 0.75rem; }
+.order-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+  background: #f8fafc;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.order-card:hover { box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08); transform: translateY(-3px); }
+.order-meta { display: flex; gap: 0.75rem; align-items: center; color: #475569; flex-wrap: wrap; }
+.status-chip { background: #dbeafe; color: #1d4ed8; padding: 0.35rem 0.65rem; border-radius: 10px; font-weight: 700; }
+.rating-chip { background: #fef3c7; color: #92400e; padding: 0.35rem 0.7rem; border-radius: 10px; display: inline-flex; align-items: center; gap: 0.25rem; font-weight: 700; }
+
+.pricing-block { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.reviews { display: flex; flex-direction: column; gap: 0.9rem; }
+.review-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.review-actions { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.setting-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: #f8fafc;
+}
+.setting-item input {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #e2e8f0;
+  margin-top: 0.4rem;
+}
+
+.notifications { display: flex; flex-direction: column; gap: 0.75rem; max-height: 360px; overflow-y: auto; }
+.notification {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: #f8fafc;
+  cursor: pointer;
+}
+.notification-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  display: grid;
+  place-items: center;
+  color: #0369a1;
+  font-size: 1.1rem;
+}
+
+.stock-health { display: flex; flex-direction: column; gap: 0.5rem; }
+.stock-chip { background: #ecfeff; color: #075985; padding: 0.6rem 0.8rem; border-radius: 10px; font-weight: 600; }
+
+.btn {
+  border: none;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #fff;
+  padding: 0.55rem 0.95rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn.ghost {
+  background: #fff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+.btn.ghost.danger { color: #dc2626; border-color: #fecdd3; }
+
+.actions { display: flex; gap: 0.5rem; }
+
+@media (max-width: 768px) {
+  .ms-topbar { flex-direction: column; align-items: flex-start; }
+  .overview { grid-template-columns: 1fr; }
+  .product-item, .order-card, .review-card { flex-direction: column; }
+  .review-actions { align-items: flex-start; }
+}
